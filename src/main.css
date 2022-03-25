@@ -1,0 +1,9 @@
+@import url('common.blocks/header/header.less');
+@import url('common.blocks/action/action.less');
+@import url('common.blocks/colors/colors.less');
+@import url('common.blocks/signs/signs.less');
+@import url('common.blocks/about/about.less');
+@import url('common.blocks/choose/choose.less');
+@import url('common.blocks/price/price.less');
+@import url('common.blocks/size/size.less');
+@import url('common.blocks/footer/footer.less');

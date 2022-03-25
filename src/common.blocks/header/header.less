@@ -1,0 +1,150 @@
+/* Header */
+.header {
+    background: #2B2831;
+    padding-top: 9px;
+}
+.menu {
+    display: flex;
+}
+.menu__logo {
+    padding: 11px 0 20px;
+}
+.menu__main {
+    display: flex;
+}
+.menu__main_item {
+
+}
+.navigation {
+    display: flex;
+}
+.navigation__item {
+    display: block;
+    transition: all 0.5s ease;
+}
+.navigation__item:hover {
+    border-bottom: 2px solid #FFB71B;
+    transition: all 0.5s ease;
+}
+.navigation__item:not(:first-child) {
+    margin-left: 40px;
+}
+    /* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #2b2831;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #FFB71B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #3A3A47;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 392px;
+    height: 217px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.text {
+    text-decoration-line: underline;
+}
+.text:hover {
+    text-decoration: none;
+}
+.price-download::before {
+    content: "";
+    background: url('../header/file.svg') no-repeat center center;
+    display: inline-block;
+    width: 21px;
+    height: 25px;
+}
+.menu__main_right {
+    margin: 6px 0 0 137px;
+}
+.menu__main_contacts {
+    margin-left: 36px;
+}
+/* Hamburger */
+.menu__hamburger {
+    display: none;
+}
+.menu__hamburger_img {
+    display: block;
+    width: 24px;
+    height: 16px;
+}
+.show-menu {
+    top: 0;
+}
+.menu__main.show-menu {
+    display: block;
+}
+    .hamburger.btn-show-menu {
+
+    }
+@media (max-width: 1199px) {
+    .container {
+		max-width: 960px;
+    }
+    .menu__hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+	.menu__main {
+        display: none;
+        width: 100%;
+        top: -100%;
+        z-index: 4;
+        right: -200%;
+        overflow-y: auto;
+        width: 100%;
+        padding: 16px 0 32px;
+        background-color: #2b2831;
+        transition: all 0.5s ease;
+        margin-top: 100px;
+        margin-left: -255px;
+    }
+    .menu__main.active {
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .navigation {
+        display: block;
+    }
+    .menu {
+        justify-content: space-between;
+    }
+    .dropdown {
+        margin-left: 41px;
+    }
+    .navigation__item {
+        margin-bottom: 15px;
+        margin-left: 0 !important;
+    }
+    .menu__main_right {
+        margin: 25px 0 25px 34px;
+    }
+    .menu__main_contacts-phone {
+        margin-bottom: 17px;
+    }
+
+    .menu__main {
+        margin-left: -159px;
+    }
+}

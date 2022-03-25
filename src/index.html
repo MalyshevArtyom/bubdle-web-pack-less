@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu topnav">
+                <div class="menu__logo">
+                    <a href="#" class="menu__logo_link">
+                        <img class="logo-h" src="common.blocks/header/logo.svg" alt="Дорстроймонтаж">
+                    </a>
+                </div>
+                <div class="menu__main" id="myLinks"> 
+                    <div class="menu__main_item" id="myLinks">
+                        <nav class="menu__main_nav">
+                            <ul class="navigation">
+                                <li class="navigation__item dropdown">
+                                    <a href="#" class="navigation__item_link dropdownbtn">
+                                        Каталог
+                                        <img src="common.blocks/header/drop.svg" alt="Лого">
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <a href="#" class="dropdown-content_link">Стандартные дорожные знаки</a>
+                                        <a href="#" class="dropdown-content_link">Светодиодные дорожные знаки</a>
+                                        <a href="#" class="dropdown-content_link">Заградительные светодиодные знаки</a>
+                                        <a href="#" class="dropdown-content_link">Временные дорожные знаки</a>
+                                        <a href="#" class="dropdown-content_link">Знаки пожарной безопасности</a>
+                                    </div>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__item_link">Прайс</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__item_link">Информация</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__item_link">Доставка</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__item_link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu__main_right">
+                        <a href="#" class="price-download text">
+                            Скачать прайс
+                        </a>
+                    </div>
+                    <div class="menu__main_contacts">
+                        <div class="menu__main_contacts-phone">
+                            <img src="common.blocks/header/phone.svg" alt="Номер телефона">
+                            <a href="tel:88412710330" class="phone-number">8 (8412) 71-03-30,</a>
+                        </div>
+                        <div class="menu__main_contacts-phone">
+                            <img src="common.blocks/header/phone.svg" alt="Номер телефона">
+                            <a href="tel:88412257004" class="phone-number">8 (8412) 25-70-04</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__hamburger hamburger">
+                    <span href="#" aria-label="Close" role="button"><img src="common.blocks/header/hamburger.svg" alt="Меню" class="menu__hamburger_img"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="main">
+  <section class="action">
+      <video loop="loop" muted="muted" autoplay="autoplay" src="https://previews.customer.envatousercontent.com/files/9a4b3c48-c068-4531-a9c3-3ceea691476e/video_preview_h264.mp4" class="action__video"></video>
+      <div class="container upper">
+          <div class="wrapper">
+              <h1 class="wrapper__title">
+                  Производство и продажа <span class="wrapper__title_span">дорожных знаков</span> в Пензе
+              </h1>
+              <p class="wrapper__text text-up">
+                  Производство в соответствии ГОСТу.
+              </p>
+              <p class="wrapper__text text-bottom">
+                  Доставка по всей территории России.
+              </p>
+              <button class="wrapper__btn btn" id="myBtn">Оставить заявку</button>
+          </div>
+          <div id="myModal" class="modal">
+              <div class="wrapper__form modal-content">
+                  <button class="wrapper__form_close close"></button>
+                  <h2 class="wrapper__form_title">Оставьте заявку</h2>
+                  <form action="#" class="wrapper__form_info">
+                      <p class="form__information">Внесите данные в форму</p>
+                      <input type="text" required placeholder="Ваше имя" name="text" class="form__input">
+                      <input type="tel" required placeholder="Ваш телефон" name="tel" class="form__input">
+                      <input type="email" required placeholder="Ваша email" name="email" class="form__input">
+                      <textarea type="text" required placeholder="Текст заявки*" name="email" class="form__input1"> </textarea>
+                      <span class="form__information_span">*Важно! Заявка оставляется в форме: 
+                          1. Название. 2. Типоразмер знака. 3. Тип плёнки 
+                          4. Временный/постоянный. 5. Кол-во</span>
+                  </form>
+                  <a href="#" class="wrapper__form_file">Прикрепить свой файл</a>
+                  <button class="wrapper__form_btn btn">Отправить</button>
+                  <span class="wrapper__form_span">Нажимая кнопку, вы даете согласие на обработку <a href="#" class="personal">персональных данных</a></span>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="signs">
+    <div class="container">
+        <div class="symbol">
+            <div class="symbol__item">
+                <a href="#" class="link-sqds">
+                    <div class="link-sqds__img">
+                        <img class="link-sqds__img_png" src="common.blocks/signs/sign1.png" alt="Знак">
+                    </div>
+                    <div class="link-sqds__text">
+                        <h4 class="link-sqds__text_title"> Стандартные дорожные знаки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="symbol__item">
+                <a href="#" class="link-sqds">
+                    <div class="link-sqds__img">
+                        <img class="link-sqds__img_png" src="common.blocks/signs/sign2.png" alt="Знак">
+                    </div>
+                    <div class="link-sqds__text">
+                        <h4 class="link-sqds__text_title">Светодиодные дорожные знаки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="symbol__item">
+                <a href="#" class="link-sqds">
+                    <div class="link-sqds__img">
+                        <img class="link-sqds__img_png" src="common.blocks/signs/sign3.png" alt="Знак">
+                    </div>
+                    <div class="link-sqds__text">
+                        <h4 class="link-sqds__text_title">Заградительные светодиодные знаки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="symbol__item">
+                <a href="#" class="link-sqds">
+                    <div class="link-sqds__img">
+                        <img class="link-sqds__img_png" src="common.blocks/signs/sign4.png" alt="Знак">
+                    </div>
+                    <div class="link-sqds__text">
+                        <h4 class="link-sqds__text_title">Временные дорожные знаки</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="symbol__item">
+                <a href="#" class="link-sqds">
+                    <div class="link-sqds__img">
+                        <img class="link-sqds__img_png" src="common.blocks/signs/sign5.png" alt="Знак">
+                    </div>
+                    <div class="link-sqds__text">
+                        <h4 class="link-sqds__text_title">Знаки пожарной безопасности</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="price">
+  <div class="container">
+      <div class="list">
+          <h2 class="list__title title">Прайс-лист</h2>
+          <p class="list__text">Наша продукция соответствует техническому регламенту Таможенного союза ТР ТС 014/2011 «О безопасности автомобильных дорог» и имеет соответствующий сертификат.</p>
+          <p class="list__text">Все дорожные знаки производятся в четком соответствии ГОСТ 52290-2004 и ГОСТ 32945-2014</p>
+          <div class="list__table">
+              <table class="table" style="width: 1416px;">
+                  <tr class="table__up" style="height: 80px;">
+                      <th  rowspan="5" scope="rowgroup">&nbsp;Знаки</th>
+                      <th colspan="2"><p>Пленка инженерная, тип А</p>
+                          <div class="table__up_text">
+                              <p>II типоразмер</p>  <p>III типоразмер</p> 
+                          </div> 
+                      </th>
+                      <th colspan="2"><p>Пленка высокоинтенс., тип Б</p>
+                          <div class="table__up_text">
+                              <p>II типоразмер</p>  <p>III типоразмер</p> 
+                          </div> 
+                      </th>
+                      <th colspan="2"><p>Пленка микропризм., тип В</p>
+                          <div class="table__up_text">
+                              <p>II типоразмер</p>  <p>III типоразмер</p> 
+                          </div> 
+                      </th>
+                  </tr>
+                  <tbody>
+                      <tr class="bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price1.png" alt="">
+                              <p>Все треугольные знаки</p>
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 250</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 800</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 950</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 970</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 550</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 450</td>
+                      </tr>
+                      <tr class="tr__back bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price2.png" alt="">
+                              <p>Все круглые знаки</p>
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 300</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 900</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 980</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;3 500</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 600</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 560</td>
+                      </tr>
+                      <tr class="bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price3.png" alt="">
+                              <p>Все квадратные знаки</p>
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 300</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 900</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 980</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;3 500</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 600</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 560</td>
+                      </tr>
+                      <tr class="tr__back bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price4.png" alt="">
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 954,6</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 700</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;5 500</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;7 800</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;6 300</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;9 850</td>
+                      </tr>
+                      <tr class="bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price5.png" alt="">
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 300</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 900</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 980</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;3 500</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 600</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 560</td>
+                      </tr>
+                      <tr class="tr__back bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price6.png" alt="">
+                              <img src="common.blocks/price/price7.png" alt="">
+                          </td>
+                          <td colspan="2" >&nbsp;1 350</td>
+                          <td colspan="2" >&nbsp;2 560</td>
+                          <td colspan="2">&nbsp;3 400</td>
+                      </tr>
+                      <tr class="bord" style="height: 144px;">
+                          <td style="width: 354px; height: 144px;">&nbsp;
+                              <img src="common.blocks/price/price8.png" alt="">
+                          </td>
+                          <td style="width: 177px; height: 144px;">&nbsp;1 850</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;2 700</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;3 300</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;5 450</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;4 250</td>
+                          <td style="width: 177px; height: 144px;">&nbsp;6 770</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <button class="list__btn btn">Смотреть весь прайс</button>
+          <div class="list__link">
+              <img src="common.blocks/price/file1.svg" alt="Картинка">
+              <a href="#" class="list__link_a">Скачать прайс</a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="size">
+  <div class="container">
+      <div class="type">
+          <div class="type__wrap">
+              <h2 class="type__wrap_title title">
+                  Какой типоразмер выбрать?
+              </h2>
+              <p class="type__wrap_text">
+                  Компания ООО Дорстроймонтаж изготавливает знаки всех типоразмеров. Согласно ГОСТ Р 52290-2004 типоразмеры дорожных знаков выбираются в соответствии с таблицей:
+              </p>
+              <a href="#" class="type__wrap_link">Смотреть таблицу</a>
+          </div>
+          <img src="common.blocks/size/lead.png" alt="Главная дорога" class="type__img-sign">
+      </div>
+  </div>
+</section>
+<section class="colors">
+  <div class="container">
+      <div class="paint">
+          <img src="common.blocks/colors/gallery.png" alt="Главная дорога" class="paint__img-sign">
+          <div class="paint__wrap">
+              <h2 class="paint__wrap_title title">
+                  В чем отличия между пленками?
+              </h2>
+              <p class="paint__wrap_text">
+                  По ГОСТу есть несколько типов (классов) светоотражающих пленок отличающихся техническими характеристиками (в основном по светоотражению и сроку службы) и местом установки знаков.
+              </p>
+              <a href="#" class="paint__wrap_link">Подробнее</a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="choose">
+            <div class="container">
+                <div class="worth">
+                    <h2 class="worth__title title title-small">Почему стоит выбрать нас?</h2>
+                    <div class="quallity">
+                        <div class="quallity__item">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose1.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Стандартные дорожные знаки</h3>
+                                    <p class="link-no__text_words">Контролируем качество продукции на всех этапах производства</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item center">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose2.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Изготавливаем по ГОСТу</h3>
+                                    <p class="link-no__text_words">Вся продукция соответствует нормам ГОСТ и требованиям ГИБДД</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose3.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Сертификат</h3>
+                                    <p class="link-no__text_words">Вся  продукция имеет сертификат "Международный стандарт качества"</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="quallity">
+                        <div class="quallity__item">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose4.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Оперативность</h3>
+                                    <p class="link-no__text_words">Благодаря отлаженному производству, изготавливаем более тысячи знаков в день</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item center">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose5.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Гибкая система скидок</h3>
+                                    <p class="link-no__text_words">Для постоянных заказчиков и крупных партнеров готовы предложить систему скидок и индивидуальные условия сотрудничества</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose6.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Гарантия</h3>
+                                    <p class="link-no__text_words">На все изделия предоставляется гарантия</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="quallity">
+                        <div class="quallity__item">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose7.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Доставка</h3>
+                                    <p class="link-no__text_words">Доставка дорожных знаков осуществляется по всей территории России</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item center">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose8.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Монтаж</h3>
+                                    <p class="link-no__text_words">В индивидуальном порядке готовы оказать услуги по монтажу дорожных знаков</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="quallity__item item__last">
+                            <a href="#" class="link-no">
+                                <div class="link-no__img">
+                                    <img class="link-no__img_png" src="common.blocks/choose/choose9.png" alt="Знак">
+                                </div>
+                                <div class="link-no__text">
+                                    <h3 class="link-no__text_title">Участвуем в госзакупках</h3>
+                                    <p class="link-no__text_words"></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+          <div class="container">
+              <div class="company">
+                  <div class="company__wrap">
+                      <h2 class="company__wrap_title title">О нас?</h2>
+                      <p class="company__wrap_text">
+                          Компания ООО Дорстроймонтаж занимается изготовлением дорожных знаков всех видов. Здесь вы можете заказать дорожные знаки II и III типоразмеров со светоотражающей поверхностью из световозвращающих пленок типа А, Б или В, а также знаки индивидуального проектирования. Грамотно налаженное производство позволяет изготавливать и доставлять качественную продукцию в максимально короткие сроки.
+                      </p>
+                  </div>
+                  <div class="company__img">
+                      <img src="common.blocks/about/logo1.png" alt="Лого" class="company__img_logo">
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="information">
+            <div class="information__links">
+                <a href="#" class="information__links_item">Cтандартные дорожные знаки</a>
+                <a href="#" class="information__links_item">Cветодиодные дорожные знаки</a>
+                <a href="#" class="information__links_item">Заградительные светодиодные знаки</a>
+                <a href="#" class="information__links_item">Временные дорожные знаки</a>
+                <a href="#" class="information__links_item">Знаки пожарной безопасности</a>
+            </div>
+            <div class="information__links info">
+                <a href="#" class="information__links_item">Прайс</a>
+                <a href="#" class="information__links_item">Информация</a>
+                <a href="#" class="information__links_item">Доставка</a>
+                <a href="#" class="information__links_item">Политика конфиденциальности</a>
+            </div>
+            <div class="information__adress">
+                <span class="information__adress_street">Адрес: <span class="adress">г.  Пенза, ул. Космодемьянской, 5</span></span>
+                <a href="tel:88412710330,257004" class="information__adress_phone">Телефон: <span class="adress">8 (8412) 71-03-30, 25-70-04</span></a>
+                <a href="mailto:info@dsm58.ru" class="information__adress_mail">E-mail: <span class="adress">info@dsm58.ru</span></a>
+            </div>
+            <div class="information__logo">
+                <a href="#" class="information__logo_link menu__logo_link"><img class="logo-h" src="common.blocks/footer/logo.svg" alt="Лого"></a>
+                <span class="information__logo_title">© 2019 ДорСтройМонтаж.</span>
+                <span class="information__author">Разработка сайта - <a href="#">onlinebees.ru</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
